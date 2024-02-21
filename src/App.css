@@ -1,3 +1,8 @@
+@font-face {
+  font-family: grapenuts;
+  src: url(./fonts/NeueMontreal-Bold.otf);
+}
+
 .App {
   text-align: center;
 }

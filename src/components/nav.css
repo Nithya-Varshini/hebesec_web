@@ -1,0 +1,27 @@
+.bg-transparent {
+    background-color: transparent !important;
+  }
+
+  .header-scroll {
+    background-color: white;
+    color: black;
+  }
+  
+  .header-scroll img {
+    filter: grayscale(0);
+  }
+
+.wow{
+  text-decoration: none;
+  color: white;
+}
+
+.text-scroll{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar
+{
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+
+
+.home{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/head.jpg);
+    height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    color: white;
+
+    display: flex;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    
+}
+
+.boal{
+    color: f7d178;
+}
+
+.label {
+height: 214px;
+width: 692px;
+}
+.label .we-provide-cyber {
+color: transparent;
+font-family: 'Neue Montreal';
+font-size: 64px;
+font-weight: 700;
+left: 0;
+letter-spacing: 0;
+line-height: normal;
+position: fixed;
+top: 0;
+}
+.label .text-wrapper {
+color: #ffffff;
+}
+.label .span {
+color: #f7d178;
+}
+
