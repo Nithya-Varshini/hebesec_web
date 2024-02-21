@@ -22,8 +22,7 @@ const HomePage = () => {
         backgroundColor: '#E6F9FB',
         margin: 0,
         height: '100vh', // Set the container to the full height of the viewport
-        overflowX: 'hidden', // Hide horizontal overflow
-        overflowY: 'hidden', // Hide vertical overflow
+        overflowX: 'hidden',// Hide vertical overflow
         display: 'flex', // Use flexbox for layout
       };
       const leftImageStyle = {
