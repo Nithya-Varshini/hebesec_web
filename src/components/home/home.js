@@ -7,6 +7,13 @@ import './home.css';
 import sideImage from '../images/Side.png'; 
 import customize from '../images/Customize.png';
 import threat from '../images/Threat.png';
+import product from '../images/product.png'
+import partner1 from '../images/partner1.png';
+import partner2 from '../images/partner2.png';
+import partner3 from '../images/partner3.png';
+import partner4 from '../images/partner4.png';
+import partner5 from '../images/partner5.png';
+import partner6 from '../images/partner6.png';
 
 const HomePage = () => {
     const divStyle = {
@@ -18,16 +25,16 @@ const HomePage = () => {
     justifyContent: 'center',
       };
 
-      const containerStyle = {
+      const containerStyle = { // Set the container to the full height of the viewport
+        padding: '60px',
         backgroundColor: '#E6F9FB',
-        margin: 0,
-        height: '100vh', // Set the container to the full height of the viewport
+        margin: 0, // Set the container to the full height of the viewport
         overflowX: 'hidden',// Hide vertical overflow
         display: 'flex', // Use flexbox for layout
       };
-      const leftImageStyle = {
-        height: '103%',
-        width: '30%',
+      const leftImageStyle = {  
+        height: '850px',
+        width: '40%',
         position: 'relative',
         top: 0,
         left: 0,
@@ -92,7 +99,7 @@ const HomePage = () => {
                 </Container>
             </header>
             <br></br>
-            <header className='head' style={{ display: 'flex', justifyContent: 'center' }}>
+            <header className='head' style={{ display: 'flex', justifyContent: 'center' , height: '100vh', verticalAlign:'center', alignContent:'center',padding:'250px 0'}}>
                 <div style={{ width: 1357, height: 339, position: 'relative', transform: 'rotate(-179.98deg)', transformOrigin: '0 0' }}>
                     <div style={{ width: 324, height: 339, left: 0, top: 0, position: 'absolute', transform: 'rotate(-179.98deg)', transformOrigin: '0 0', background: 'rgba(37, 167, 200, 0.55)', borderRadius: '50%' }} />
                     <div style={{ width: 329, height: 339, left: -253, top: -0.10, position: 'absolute', transform: 'rotate(-179.98deg)', transformOrigin: '0 0', background: 'rgba(52.99, 123.43, 141.31, 0.69)', borderRadius: '50%' }} />
@@ -167,12 +174,22 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div style={{  textAlign: 'left', color: '#323377', fontFamily: 'Titillium Web', fontSize: '90px', fontStyle: 'normal', fontWeight: 700, lineHeight: '100%', letterSpacing: '-0.9px', marginTop: '30px', marginLeft: '5px' }}>
-          Our Products
-        </div>
+          
         </div>
       </div>
       
+    </div>
+    <div className='products'>
+      <div className='part1'>
+      <div style={{color: '#323377', fontSize: 80, fontFamily: 'Titillium Web', fontWeight: '700', wordWrap: 'break-word'}}>Our Products</div>
+      <div style={{width: '100%', color: '#323377', fontSize: 30, fontFamily: 'Poppins', fontWeight: '400', wordWrap: 'break-word'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa. Proin ipsum nunc, lacinia ac faucibus quis, ullamcorper non metus. </div>
+      <div style={{width: '300px', height: '50px', padding: 24,marginTop:'30px', background: 'linear-gradient(299deg, #0A767B 0%, #00A7D6 100%)', borderRadius: 8, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'inline-flex'}}>
+<div style={{flex: '1 1 0', textAlign: 'center', color: 'white', fontSize: 24, fontFamily: 'Titillium Web', fontWeight: '700',wordWrap: 'break-word'}}>Viewe More</div>
+</div>
+      </div>
+      <div className='part2'>
+      <img style={{width: '100%'}} src={product} />
+      </div>
     </div>
     <div style={divStyle}>
       Achievements
@@ -283,8 +300,29 @@ const HomePage = () => {
                 //    icon={<StarIcon />}
                 />
             </VerticalTimeline>
-
-
+            <br></br>
+            <div>
+            <div style={divStyle}>
+      Our Partners
+    </div>
+   
+    </div>
+    <div class="scroll-container">
+      <div class="carousel-primary">
+        <img src={partner1} alt="cat1" />
+        <img src={partner2} alt="cat2" />
+        <img src={partner3} alt="cat3" />
+        <img src={partner4} alt="cat4" />
+      </div>
+      <div class="carousel-primary carousel-secondary">
+        <img src={partner5} alt="cat5" />
+        <img src={partner6} alt="cat6" />
+        <img src={partner1} alt="cat7" />
+        <img src={partner2} alt="cat8" />
+     
+  </div>
+    </div>
+      <div style={{height:'50vh',backgroundColor:'#E6F9FB',display:'flex',justifyContent:'center',alignItems:'center'}}></div>
 
         </>
     );

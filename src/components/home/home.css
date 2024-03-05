@@ -50,3 +50,60 @@ color: #ffffff;
 color: #f7d178;
 }
 
+.products{
+    padding :100px;
+    padding-top: 150px;
+    height : 100vh;
+    display: flex;
+
+}
+
+.part1{
+    width:60%;
+}
+
+.part2{
+    width:40%;
+    padding: 50px;
+}
+
+.scroll-container {
+     height: 100vh;
+     }
+    
+     .carousel-primary,
+     .carousel-secondary {
+     width: 100%;
+     overflow: hidden;
+     position: absolute;
+     white-space: nowrap;
+     }
+    
+     .carousel-primary img {
+        width: 200px;
+        height: 200px;
+     border-radius: 10px;
+     }
+     .carousel-primary {
+     display: flex;
+     justify-content: space-around;
+     animation: scroll-horizontal 20s linear infinite;
+     }
+    
+     .carousel-secondary {
+     animation: scroll-horizontal 20s linear infinite;
+     animation-delay: 10s;
+     }
+    
+    @keyframes scroll-horizontal {
+     0% {
+     left: 100%;
+     }
+    
+     100% {
+     left: -100%;
+     }
+     }
+
+     
+
