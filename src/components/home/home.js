@@ -88,6 +88,34 @@ const HomePage = () => {
       const textstyle2={
         color: '#414584', fontFamily: 'Poppins', fontSize: '16px', fontStyle: 'normal', fontWeight: 400, lineHeight: '23px', fontFeatureSettings: "'clig' off, 'liga' off", marginTop: '10px',
       };
+
+      const scrollers = document.querySelectorAll(".scroller");
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
     
     return (
       <>
@@ -733,28 +761,44 @@ const HomePage = () => {
           <div style={divStyle}>Our Partners</div>
         </div>
         <div class="scroll-container">
-          <div class="carousel-primary">
-            <img src={partner1} alt="cat1" />
-            <img src={partner2} alt="cat2" />
-            <img src={partner3} alt="cat3" />
-            <img src={partner4} alt="cat4" />
-          </div>
-          <div class="carousel-primary carousel-secondary">
+        {/* <div class="carousel"> */}
+    {/* <div class="carousel-inner">
+      <img src={partner1} alt="cat1" />
+      <img src={partner2} alt="cat2" />
+      <img src={partner3} alt="cat3" />
+      <img src={partner4} alt="cat4" />
+      <img src={partner5} alt="cat5" />
+      <img src={partner6} alt="cat6" /> */}
+      {/* <img src={partner1} alt="cat7" />
+      <img src={partner2} alt="cat8" /> */}
+    {/* </div> */}
+    <div class="scroller" data-direction="left" data-speed="slow" style={{ '--direction': 'left', '--duration': '10s' }}>
+  <div class="scroller__inner">
+  <img src={partner1} alt="cat1" />
+      <img src={partner2} alt="cat2" />
+      <img src={partner3} alt="cat3" />
+      <img src={partner4} alt="cat4" />
+      <img src={partner5} alt="cat5" />
+      <img src={partner6} alt="cat6" />
+  </div>
+</div>
+  {/* </div> */}
+          {/* <div class="carousel-primary carousel-secondary">
             <img src={partner5} alt="cat5" />
             <img src={partner6} alt="cat6" />
             <img src={partner1} alt="cat7" />
             <img src={partner2} alt="cat8" />
-          </div>
+          </div> */}
         </div>
         <div
-          style={{ height: "35vh", background: "#11467A", display: "flex" }}
+          style={{ height: "40vh", background: "#11467A", display: "flex" }}
           className="foot"
         >
           <div className="foot1">
             <img src={logo} className="foot_logo" />
             <div
               style={{
-                paddingLeft: "130px",
+                paddingLeft: "170px",
                 color: "white",
                 fontSize: 20,
                 fontFamily: "Poppins",
@@ -789,18 +833,123 @@ const HomePage = () => {
               <div
                 style={{
                   color: "white",
-                  fontSize: 17,
+                  fontSize: 19,
                   fontFamily: "Inter",
                   fontWeight: "400",
                   wordWrap: "break-word",
                   width: "90%",
                 }}
               >
-                Tamil Nadu, India<br></br>Chennai<br></br>Coimbatore<br></br>Karaikudi
+                <strong>Tamil Nadu, India<br></br></strong>Chennai<br></br>Coimbatore<br></br>Karaikudi
               </div>
             </div>
+            <div className="seg">
+              <img src={phone} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                +91 9566022629</div>
+            </div>
+            <div className="seg">
+              <img src={glob} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                www.hebesec.com</div>
+            </div>
+            <div className="seg">
+              <img src={mail} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                info@hebesec.com  </div>
+            </div>
           </div>
+          <div className="foot3">
+            <div className="seg">
+              <img src={location} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                <strong>Tamil Nadu, India<br></br></strong>Chennai<br></br>Coimbatore<br></br>Karaikudi
+              </div>
+            </div>
+            <div className="seg">
+              <img src={phone} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                +91 9566022629</div>
+            </div>
+            <div className="seg">
+              <img src={glob} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                www.hebesec.com</div>
+            </div>
+            <div className="seg">
+              <img src={mail} className="seg1" />
+              <div
+                style={{
+                  color: "white",
+                  fontSize: 19,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  width: "90%",
+                }}
+              >
+                info@hebesec.com  </div>
+            </div>
+          </div>
+          
         </div>
+        <script>
+          
+        </script>
       </>
     );
 };
