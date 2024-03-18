@@ -357,7 +357,7 @@ function addAnimation() {
                 border: "1px white solid",
               }}
             />
-            <img
+            <div
               style={{
                 width: 52,
                 height: 55,
@@ -367,9 +367,8 @@ function addAnimation() {
                 transform: "rotate(-179.98deg)",
                 transformOrigin: "0 0",
               }}
-              src="https://via.placeholder.com/52x55"
-            />
-            <img
+            >Comprehensive Security Analysis</div>
+            <div
               style={{
                 width: 58,
                 height: 62,
@@ -380,32 +379,31 @@ function addAnimation() {
                 transformOrigin: "0 0",
               }}
               src="https://via.placeholder.com/58x62"
-            />
-            <img
+            >Expertise & Experience</div>
+            <div
               style={{
                 width: 62,
                 height: 66,
                 left: -388.95,
-                top: -143.15,
+                top: -143.15, 
                 position: "absolute",
                 transform: "rotate(-179.98deg)",
                 transformOrigin: "0 0",
               }}
-              src="https://via.placeholder.com/62x66"
-            />
-            <img
+            >Customized Approach</div>
+            <div
               style={{
                 width: 63.1,
                 height: 67.3,
                 left: -122.95,
-                top: -136.77,
+                top: -143.15,
+                // fontSize: 20,
                 position: "absolute",
                 transform: "rotate(178.46deg)",
                 transformOrigin: "0 0",
               }}
-              src="https://via.placeholder.com/63x67"
-            />
-            <img
+            >Continuous Monitoring</div>
+            <div
               style={{
                 width: 61,
                 height: 65,
@@ -415,8 +413,7 @@ function addAnimation() {
                 transform: "rotate(-179.98deg)",
                 transformOrigin: "0 0",
               }}
-              src="https://via.placeholder.com/61x65"
-            />
+            >Cost Effectiveness</div>
           </div>
         </header>
         <br></br>

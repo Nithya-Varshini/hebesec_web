@@ -61,7 +61,7 @@ function Nav() {
             /></a>
           <div className="collapse navbar-collapse" id="Navbar">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/resume">ABOUT US</Link></li>
+              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/about">ABOUT US</Link></li>
               <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/contact">SERVICES</Link></li>
               <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/resume">R&D CENTER</Link></li>
               <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/resume">CONTACT US</Link></li>
