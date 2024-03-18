@@ -11,7 +11,7 @@ function Nav() {
     const handleScroll = () => {
       if (window.scrollY > 0 && logoSrc !== newImage) {
         setLogoSrc(newImage); // Change to the second image when scrolled
-      } else{
+      } else {
         setLogoSrc(logo); // Change back to the first image when not scrolled
       }
     };
@@ -22,20 +22,20 @@ function Nav() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     var header = document.querySelector('.navbar');
     var texts = document.querySelectorAll('.wow');
     if (header && texts) {
       if (window.scrollY > 0 && texts.length > 0) {
         header.classList.add('header-scroll');
-        texts.forEach(function(text) {
+        texts.forEach(function (text) {
           text.classList.add('text-scroll');
         });
         // Change image source on scroll
         // Replace 'new_image_src_on_scroll.jpg' with the actual image source
       } else {
         header.classList.remove('header-scroll');
-        texts.forEach(function(text) {
+        texts.forEach(function (text) {
           text.classList.remove('text-scroll');
         });
         // Reset image source when not scrolled
@@ -52,13 +52,13 @@ function Nav() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <a className="navbar-brand ms-auto" href="/"><img
-              src={logoSrc}
-              width="auto"
-              height="60"
-              margin-top="3"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            /></a>
+            src={logoSrc}
+            width="auto"
+            height="60"
+            margin-top="3"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          /></a>
           <div className="collapse navbar-collapse" id="Navbar">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/about">ABOUT US</Link></li>

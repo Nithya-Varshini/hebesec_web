@@ -1,0 +1,132 @@
+section {
+    height: 100vh;
+    
+}
+
+.about-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aboutbg.png);
+    height: 100vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
+/* .overlap-group {
+    height: 493px;
+    width: 526px;
+    position: absolute;
+} */
+
+.overlap-group {
+    position: relative;
+}
+
+.vector-wave {
+    position: absolute;
+    right: 0;
+    height: 493px;
+    top: -120px
+}
+
+.ellipse {
+    background-color: #2FCADB;
+    border-radius: 250px;
+    filter: blur(20px);
+    opacity: 0.2;
+    right: 0;
+    height: 330px;
+    width: 100px;
+    /* top: -120px; */
+    position: absolute;
+}
+
+.vector-waves2 {
+    position: absolute;
+    left: 0;
+    height: 493px;
+    top: -120px
+}
+
+.ellipse2 {
+    background-color: #2FCADB;
+    border-radius: 250px;
+    filter: blur(20px);
+    opacity: 0.2;
+    left: 0;
+    height: 330px;
+    width: 100px;
+    /* top: -120px; */
+    position: absolute;
+}
+
+
+.about-goal {
+    color: #3ed5dd;
+    font-family: "Titillium Web-SemiBold", Helvetica;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: fixed;
+    text-align: center;
+    top: 100;
+    width: 761px;
+}
+
+.goal-head {
+    color: #3ed5dd;
+    font-family: "Titillium Web-SemiBold", Helvetica;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.goal-subhead {
+    color: #323377;
+    text-align: center;
+
+    /* Headings/H2 600 */
+    font-family: "Titillium Web";
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+    /* 104.478% */
+    text-transform: capitalize;
+}
+
+.custom-card {
+    align-items: flex-start;
+    color: #fff !important;
+    background: linear-gradient(180deg,
+            rgb(65, 69, 132) 0%,
+            rgb(65, 69, 132) 0.01%,
+            rgba(65, 69, 132, 0.5) 49.48%,
+            rgb(65, 69, 132) 100%);
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 32px;
+    text-align: center;
+
+}
+
+.custom-card-title {
+    text-align: center;
+
+    font-size: 28px !important;
+    font-weight: 600;
+}

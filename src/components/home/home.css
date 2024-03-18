@@ -1,75 +1,77 @@
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/head.jpg);
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  color: white;
 
-
-.home{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/head.jpg);
-    height: 100vh;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
-    color: white;
-
-    display: flex;
-} 
+  display: flex;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.head{
-    
-}
+.head {}
 
-.boal{
-    color: f7d178;
+.boal {
+  color: f7d178;
 }
 
 .label {
-height: 214px;
-width: 692px;
+  height: 214px;
+  width: 692px;
 }
+
 .label .we-provide-cyber {
-color: transparent;
-font-family: 'Neue Montreal';
-font-size: 64px;
-font-weight: 700;
-left: 0;
-letter-spacing: 0;
-line-height: normal;
-position: fixed;
-top: 0;
+  color: transparent;
+  font-family: 'Neue Montreal';
+  font-size: 64px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+  top: 0;
 }
+
 .label .text-wrapper {
-color: #ffffff;
+  color: #ffffff;
 }
+
 .label .span {
-color: #f7d178;
+  color: #f7d178;
 }
 
-.products{
-    padding :100px;
-    padding-top: 150px;
-    height : 100vh;
-    display: flex;
+.products {
+  padding: 100px;
+  padding-top: 150px;
+  height: 100vh;
+  display: flex;
 
 }
 
-.part1{
-    width:60%;
+.part1 {
+  width: 60%;
 }
 
-.part2{
-    width:40%;
-    padding: 50px;
+.part2 {
+  width: 40%;
+  padding: 50px;
 }
 
 .container {
-  width: 100%; /* Adjust as needed */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  width: 100%;
+  /* Adjust as needed */
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
 }
 
 .content {
@@ -77,8 +79,45 @@ color: #f7d178;
   overflow-x: hidden;
 }
 
+.foot1 {
+  width: 50%;
+
+}
+
+.foot_logo {
+  height: 100px;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.foot2 {
+  width: 20%;
+  padding-top: 40px;
+}
+
+.foot3 {
+  width: 30%;
+  padding-top: 40px;
+}
+
+
+.seg {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+
+.seg1 {
+  height: 20px;
+  width: 10%;
+  padding-left: 5px;
+}
+
+
+/* scroller */
+
 .scroller {
-  max-width: 100%;
+  max-width: 100;
 }
 
 .scroller__inner {
@@ -86,26 +125,22 @@ color: #f7d178;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  
 }
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -130,41 +165,12 @@ color: #f7d178;
   }
 }
 
-  
+/* general styles */
 
-     
-
-     .foot1{
-        width: 50%;
-        
-     }
-
-     .foot_logo{
-        height: 100px;
-        padding-left: 70px;
-        padding-top: 30px;
-     }
-
-     .foot2{
-        width:20%;
-        padding-top: 40px;
-     }
-     
-     .foot3{
-        width:30%;
-        padding-top: 40px;
-     }
-     
-     
-     .seg{
-        display: flex;
-        padding-left:100px;
-        padding-top:10px;
-     }
-     .seg1{
-        height: 20px;
-        width:10%;
-        padding-left: 5px;
-     }
-     
-
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(215, 25%, 27%);
+  --clr-primary-800: hsl(217, 33%, 17%);
+  --clr-primary-900: hsl(218, 33%, 9%);
+}
