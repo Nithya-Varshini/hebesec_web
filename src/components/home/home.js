@@ -15,7 +15,7 @@ import glob from '../images/glob.svg';
 import Scroller from './scroll';
 
 
-const HomePage = () => {
+const   HomePage = () => {
   const divStyle = {
     color: '#323377',
     fontSize: 70,
