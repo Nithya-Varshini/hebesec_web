@@ -13,9 +13,9 @@ import phone from '../images/call.svg';
 import mail from '../images/mail.svg';
 import glob from '../images/glob.svg';
 import Scroller from './scroll';
+import Test from './test';
 
-
-const   HomePage = () => {
+const HomePage = () => {
   const divStyle = {
     color: '#323377',
     fontSize: 70,
@@ -165,7 +165,8 @@ const   HomePage = () => {
           </Row>
         </Container>
       </header>
-      <br></br>
+
+      <Test />
       <header
         className="head"
         style={{
@@ -728,7 +729,7 @@ const   HomePage = () => {
       <br></br>
       <div>
         <div style={divStyle}>Our Partners</div>
-              <Scroller />
+        <Scroller />
       </div>
       <div
         style={{ height: "40vh", background: "#11467A", display: "flex" }}
