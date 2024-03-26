@@ -5,8 +5,6 @@ import Navv from './components/nav';
 // import Contact from './components/contact';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap';
-
 import './App.css';
 import { About } from './components/about/about';
 
