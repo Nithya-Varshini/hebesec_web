@@ -4,12 +4,14 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { AboutHead } from './about_head';
 import { GoalPage } from './goalPage';
 import Scroller from '../home/scroll';
+import TimelineComponent from './h_timeline.js';
 
 export const About = () => {
     return (
         <div>
             <AboutHead />
             <GoalPage />
+            <TimelineComponent />
             <section style={{ backgroundColor: 'beige   ' }}>
                 <Container>
                     Timeline page

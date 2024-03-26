@@ -20,15 +20,9 @@ function App() {
           <Route path='/product/:category/:id' element={<ProductPage products={storeData?.products} setData={setStoreData} setCartActive={setCartActive} fetchStoreData={fetchStoreData} cartCount={cartCount} fetchCartCount={fetchCartCount} />} />
           <Route path='/checkout' element={<Checkout products={storeData?.products} fetchStoreData={fetchStoreData} />} />
           <Route path='/booking' element={<Booking />} /> */}
-<<<<<<< HEAD
-          {/* <Route path='/about' element={<About />} /> */}
-          {/* <Route path='/programs' element={<Programs />} /> */}
-        </Routes>
-=======
         <Route path='/about' element={<About />} />
         {/* <Route path='/programs' element={<Programs />} />  */}
       </Routes>
->>>>>>> 72fa1123aaf0a78d369bd1e1fc5f752607bd1c05
     </BrowserRouter>
   );
 }
